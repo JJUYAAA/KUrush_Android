@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/HomeFragment"
+        android:icon="@drawable/btn_home"
+        android:state_checked="true"
+        tools:ignore="MenuTitle"
+        android:title="홈"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/GoalFragment"
+        android:icon="@drawable/btn_goal"
+        tools:ignore="MenuTitle"
+        android:title="목표"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/ReportFragment"
+        android:icon="@drawable/btn_report"
+        tools:ignore="MenuTitle"
+        android:title="리포트"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/HistoryFragment"
+        android:icon="@drawable/btn_history"
+        tools:ignore="MenuTitle"
+        android:title="히스토리"
+        app:showAsAction="always"
+        />
+
+
+</menu>
