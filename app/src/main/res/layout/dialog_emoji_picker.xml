@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="5"
+    android:padding="16dp">
+
+    <TextView android:text="😀" style="@style/EmojiStyle"/>
+    <TextView android:text="😍" style="@style/EmojiStyle"/>
+    <TextView android:text="🥳" style="@style/EmojiStyle"/>
+    <TextView android:text="🏋️" style="@style/EmojiStyle"/>
+    <TextView android:text="🏃" style="@style/EmojiStyle"/>
+    <TextView android:text="📚" style="@style/EmojiStyle"/>
+    <TextView android:text="🎨" style="@style/EmojiStyle"/>
+    <TextView android:text="🎵" style="@style/EmojiStyle"/>
+    <TextView android:text="💻" style="@style/EmojiStyle"/>
+    <TextView android:text="🍎" style="@style/EmojiStyle"/>
+    <TextView android:text="🙅‍♀️" style="@style/EmojiStyle"/>
+    <TextView android:text="🙆‍♀️" style="@style/EmojiStyle"/>
+    <TextView android:text="🏃‍♀️" style="@style/EmojiStyle"/>
+    <TextView android:text="💪" style="@style/EmojiStyle"/>
+    <TextView android:text="🧘‍♀️" style="@style/EmojiStyle"/>
+
+    <!-- 더 많은 이모지를 추가할 수 있습니다 -->
+
+</GridLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ic_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_goal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="22dp"/>
+
+    <TextView
+        android:id="@+id/tv_higher_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="이번 여름까지 복근 만들기"
+        app:layout_constraintTop_toTopOf="@id/ic_goal"
+        app:layout_constraintBottom_toBottomOf="@id/ic_goal"
+        app:layout_constraintStart_toEndOf="@id/ic_goal"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textColor="#696969"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lower_goal"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ic_goal"
+        tools:listitem="@layout/goal_lower_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
