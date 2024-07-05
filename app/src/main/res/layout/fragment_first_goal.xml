@@ -222,6 +222,55 @@
             android:layout_marginStart="27dp"
             android:layout_marginTop="160dp"
             android:textColor="#EE6C6C"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            android:layout_marginStart="32dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="화"
+            android:layout_marginStart="75dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수"
+            android:layout_marginStart="118dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목"
+            android:layout_marginStart="160dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금"
+            android:layout_marginStart="203dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토"
+            android:layout_marginStart="245dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:layout_marginStart="288dp"
+            android:textSize="12sp"
+            android:layout_marginTop="200dp"/>
     </FrameLayout>
 
 <FrameLayout
