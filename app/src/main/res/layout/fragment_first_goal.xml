@@ -26,43 +26,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_date"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="5dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_goal_box" />
 
-        <ImageView
-            android:id="@+id/iv_check_ellipse_white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_check_ellipse"
-            android:layout_marginStart="273dp"
-            android:layout_marginTop="20dp"/>
-        <ImageView
-            android:id="@+id/iv_check_red_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_check"
-            android:layout_marginStart="291dp"
-            android:layout_marginTop="40dp"/>
+
         <ImageView
             android:id="@+id/iv_check_ellipse_red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_goal_ellipse_red"
             android:layout_marginStart="273dp"
-            android:layout_marginTop="20dp"
-            android:visibility="gone"/>
+            android:layout_marginTop="20dp"/>
         <ImageView
             android:id="@+id/iv_check_white_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_check_white"
             android:layout_marginStart="291dp"
-            android:layout_marginTop="40dp"
-            android:visibility="gone"/>
+            android:layout_marginTop="40dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_goal_rectangle"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="60dp"/>
         <EditText
             android:layout_width="wrap_content"
@@ -137,16 +122,15 @@
         app:layout_constraintEnd_toEndOf="parent">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_memo_rectangle"
-            android:layout_marginStart="25dp"/>
+            android:layout_height="260dp"
+            android:src="@drawable/ic_memo_rectangle"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="상위 목표"
             android:textSize="14sp"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="27dp"
             android:layout_marginTop="12dp"
             android:textColor="#EE6C6C"/>
         <TextView
@@ -162,7 +146,7 @@
             android:layout_width="316dp"
             android:layout_height="1dp"
             android:layout_marginTop="54dp"
-            android:layout_marginStart="38dp"
+            android:layout_marginStart="13dp"
             android:background="#CDCDCD"/>
 
         <TextView
@@ -170,7 +154,7 @@
             android:layout_height="wrap_content"
             android:text="목표 달성 기간"
             android:textSize="14sp"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="27dp"
             android:layout_marginTop="65dp"
             android:textColor="#EE6C6C"/>
         <ImageView
@@ -194,7 +178,7 @@
             android:layout_height="wrap_content"
             android:text="부터"
             android:textSize="14sp"
-            android:layout_marginStart="320dp"
+            android:layout_marginStart="308dp"
             android:layout_marginTop="69dp"
             android:textColor="@color/black"/>
 
@@ -220,7 +204,7 @@
             android:layout_height="wrap_content"
             android:text="까지"
             android:textSize="14sp"
-            android:layout_marginStart="320dp"
+            android:layout_marginStart="308dp"
             android:layout_marginTop="110dp"
             android:textColor="@color/black"/>
 
@@ -228,14 +212,14 @@
             android:layout_width="316dp"
             android:layout_height="1dp"
             android:layout_marginTop="148dp"
-            android:layout_marginStart="38dp"
+            android:layout_marginStart="13dp"
             android:background="#CDCDCD"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="알림설정"
             android:textSize="14sp"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="27dp"
             android:layout_marginTop="160dp"
             android:textColor="#EE6C6C"/>
     </FrameLayout>
@@ -246,10 +230,10 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/fl_goal_info"
-    android:layout_marginTop="20dp">
+    app:layout_constraintBottom_toBottomOf="parent">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_button_red" />
     <TextView
@@ -258,7 +242,7 @@
         android:text="새로운 루틴 추가"
         android:textSize="14sp"
         android:textColor="@color/white"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="28dp"/>
 </FrameLayout>
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_home_goal_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_goal_box" />
+
+        <ImageView
+            android:id="@+id/iv_check_ellipse_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_ellipse"
+            android:layout_marginStart="273dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:id="@+id/iv_check_red_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"
+            android:layout_marginStart="291dp"
+            android:layout_marginTop="40dp"/>
+        <ImageView
+            android:id="@+id/iv_check_ellipse_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_goal_ellipse_red"
+            android:layout_marginStart="273dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/iv_check_white_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_white"
+            android:layout_marginStart="291dp"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💪"
+            android:textSize="25sp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/tv_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="윗몸 일으키기"
+            android:textSize="20sp"
+            android:textColor="#696969"
+            android:textStyle="bold"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="35dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClickTvGoal"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
