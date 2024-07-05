@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".report.ReportMonthlyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calender"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toTopOf="@id/monthYearText"
+        app:layout_constraintBottom_toBottomOf="@id/monthYearText"
+        app:layout_constraintEnd_toStartOf="@id/monthYearText"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/monthYearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="JULY"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#696969"
+        android:layout_marginStart="16dp"/>
+
+    <com.example.myapplication.report.CustomCalendarView
+        android:id="@+id/customCalendarView"
+        android:layout_width="316dp"
+        android:layout_height="240dp"
+        app:layout_constraintTop_toBottomOf="@+id/monthYearText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:dayOfWeekTextColor="#696969"
+        app:dayOfWeekTextSize="12sp"
+        app:percentTextColor="#FFFFFF"
+        app:percentTextSize="10sp"
+        app:progressColor="#EE6C6C"/>
+
+    <com.example.myapplication.report.WeeklyProgressGraph
+        android:id="@+id/weeklyProgressGraph"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/customCalendarView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp"
+        app:progressTextSize="12sp"
+        app:weekTextSize="12sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
