@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.myapplication.databinding.FragmentHomeBinding
+import com.example.myapplication.R
 
 
 class HomeFragment : Fragment() {
@@ -18,7 +19,6 @@ class HomeFragment : Fragment() {
     ): View? {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-
 
         return binding.root
     }
