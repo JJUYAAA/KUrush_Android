@@ -1,14 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     tools:context=".home.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="홈" />
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2024년 7월 4일"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textColor="#EE6C6C"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_ment_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 작은 실천이 모여"
+                android:layout_marginStart="50dp"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#696969"
+                app:layout_constraintTop_toBottomOf="@id/tv_date"
+                android:layout_marginTop="45dp"/>
+            <TextView
+                android:id="@+id/tv_ment_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="큰 목표를 이룰 수 있길"
+                android:layout_marginStart="52dp"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#696969"
+                app:layout_constraintTop_toBottomOf="@id/tv_ment_1"/>
 
-</FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_home_ellipse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_ellipse_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ellipse_10"/>
+                <ImageView
+                    android:id="@+id/iv_ellipse_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ellipse_11"/>
+                <TextView
+                    android:id="@+id/tv_fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="70dp"
+                    android:textSize="40sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80%"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginStart="93dp"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_goal"
+                app:layout_constraintTop_toBottomOf="@id/fl_home_ellipse"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="40dp"/>
+            <TextView
+                android:id="@+id/tv_today_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 목표"
+                android:layout_marginStart="172dp"
+                android:textSize="18sp"
+                android:textColor="#EE6C6C"
+                android:textStyle="bold"/>
+
+            <FrameLayout
+                android:id="@+id/fl_home_goal_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_today_goal"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_goal_box" />
+
+                <ImageView
+                    android:id="@+id/iv_check_ellipse_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_ellipse"
+                    android:layout_marginStart="273dp"
+                    android:layout_marginTop="20dp"/>
+                <ImageView
+                    android:id="@+id/iv_check_red_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check"
+                    android:layout_marginStart="291dp"
+                    android:layout_marginTop="40dp"/>
+                <ImageView
+                    android:id="@+id/iv_check_ellipse_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_goal_ellipse_red"
+                    android:layout_marginStart="273dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/iv_check_white_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_white"
+                    android:layout_marginStart="291dp"
+                    android:layout_marginTop="40dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💪"
+                    android:textSize="25sp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="윗몸 일으키기"
+                    android:textSize="20sp"
+                    android:textColor="#696969"
+                    android:textStyle="bold"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="35dp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_home_goal_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_goal_box"/>
+                <ImageView
+                    android:id="@+id/iv_check_ellipse_white_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_ellipse"
+                    android:layout_marginStart="273dp"
+                    android:layout_marginTop="20dp"/>
+                <ImageView
+                    android:id="@+id/iv_check_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check"
+                    android:layout_marginStart="291dp"
+                    android:layout_marginTop="40dp"/>
+                <ImageView
+                    android:id="@+id/iv_check_ellipse_red_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_goal_ellipse_red"
+                    android:layout_marginStart="273dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/iv_check_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_white"
+                    android:layout_marginStart="291dp"
+                    android:layout_marginTop="40dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📚"
+                    android:textSize="25sp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="독서하기"
+                    android:textSize="20sp"
+                    android:textColor="#696969"
+                    android:textStyle="bold"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="35dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
