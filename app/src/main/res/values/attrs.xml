@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCalendarView">
+        <attr name="dayOfWeekTextColor" format="color" />
+        <attr name="dayOfWeekTextSize" format="dimension" />
+        <attr name="percentTextColor" format="color" />
+        <attr name="percentTextSize" format="dimension" />
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WeeklyProgressGraph">
+        <attr name="progressTextSize" format="dimension"/>
+        <attr name="weekTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>
