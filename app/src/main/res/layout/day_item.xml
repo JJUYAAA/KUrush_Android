@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="월"/>
+
+    <TextView
+        android:id="@+id/iv_emoji"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:text="📚"
+        android:layout_marginTop="6dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_small_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_small_speech"
+        android:paddingStart="10dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_edit_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="윗몸 일으키기"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#EE6C6C"
+            android:textStyle="bold"
+            android:textSize="9sp"
+            android:layout_marginStart="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

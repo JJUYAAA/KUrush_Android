@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <ImageView
+        android:id="@+id/iv_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rectengle" />
+
+    <EditText
+        android:id="@+id/et_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:hint="여기에 루틴을 입력하세요"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_selected_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="end"/>
+
+    <ImageView
+        android:id="@+id/iv_select_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_emoji"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"/>
+
+</FrameLayout>
