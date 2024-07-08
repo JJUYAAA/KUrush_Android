@@ -19,7 +19,7 @@ class OnboardingActivity : AppCompatActivity() {
         // Use a handler to delay the transition
         Handler(Looper.getMainLooper()).postDelayed({
             // Intent to navigate to the next activity
-            val intent = Intent(this@OnboardingActivity, MainActivity::class.java)
+            val intent = Intent(this@OnboardingActivity, LoginActivity::class.java)
             startActivity(intent)
             finish() // Finish the current activity
         }, DELAY_MILLIS)

@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -49,6 +50,7 @@ class LoginActivity : AppCompatActivity() {
                         response: Response<SigninResponseData>
                     ) {
                         if(response.isSuccessful){
+                            Log.d("성공", response.body().toString())
                             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                             startActivity(intent)
                         }
@@ -57,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
                         }
                     }
                     override fun onFailure(call: Call<SigninResponseData>, t: Throwable) {
-
+                        Log.d("실패", t.message.toString())
                     }
 
                 }

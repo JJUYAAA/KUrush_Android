@@ -25,7 +25,7 @@ interface RetrofitIF {
         signupRequestData : SignupRequestData
     ) : Call<SignupResponseData>
 
-    @POST("/member/singIn")
+    @POST("/api/users/login")
     fun signIn(
         @Body
         SiginRequestData: SignInRequestData

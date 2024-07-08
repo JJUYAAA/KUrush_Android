@@ -51,7 +51,7 @@ data class SignupResponseData(
 )
 
 data class SignInRequestData(
-    @SerializedName("id")
+    @SerializedName("email")
     val userId : String,
     @SerializedName("password")
     val password : String
