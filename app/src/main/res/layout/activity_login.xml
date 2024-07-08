@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_login_box"/>
         <EditText
+            android:id="@+id/et_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint = "아이디를 입력해주세요"
@@ -69,6 +70,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_login_box"/>
         <EditText
+            android:id="@+id/et_pw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint = "비밀번호를 입력해주세요"
@@ -78,7 +80,17 @@
             android:layout_marginStart="27dp"/>
     </FrameLayout>
 
+    <TextView
+        android:id="@+id/tv_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        app:layout_constraintTop_toBottomOf="@id/fl_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
     <FrameLayout
+        android:id="@+id/fl_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,8 +100,8 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_button_red"/>
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_button_red" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

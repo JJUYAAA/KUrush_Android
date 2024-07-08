@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_login_box"/>
         <EditText
+            android:id="@+id/et_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint = "아이디를 입력해주세요"
@@ -71,6 +72,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_login_box"/>
         <EditText
+            android:id="@+id/et_pw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint = "비밀번호를 입력해주세요"
@@ -81,28 +83,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/fl_pw_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/fl_pw"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="19dp">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_login_box"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint = "다시 한 번 입력해주세요"
-            android:textSize="18sp"
-            android:background="#00ff0000"
-            android:layout_marginTop="11dp"
-            android:layout_marginStart="27dp"/>
-    </FrameLayout>
-
-    <FrameLayout
+        android:id="@+id/fl_Signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
